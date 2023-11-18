@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Recap</title>
+    <style>
+        .blue-bg{
+            background-color: blue;
+            color: #ffffff;
+            padding: 20px;
+        }
+        .dark-bg{
+            background-color: #000;
+            color: #aff500;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title blue-bg another-class">
+        <h1>JavaScript Recap</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dicta, voluptate deserunt dolores maxime aspernatur minus error pariatur numquam corrupti cumque quod nisi voluptatibus, fuga quibusdam minima? Ipsam, odit tempore.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam vel sequi ea aliquid modi delectus dolorem nostrum dolores hic, consectetur nisi vero, aspernatur voluptas, autem perferendis quasi neque sapiente magnam.</p>
+        <button type="button" id="button">add color</button>
+    </div>
+    <div class="display">
+        <h1>Users</h1>
+        <div class="users">
+            
+        </div>
+    </div>
+
+    <script src="dom.js"></script>
+    <script>
+        //global scope
+        //variable created in the global scope,
+        //can be accessible anywhere(scope)
+        let global = 'global';
+        let local_scope1 = 'local';
+
+        //block/local-scope - expression created within a curly bracket {}
+        //note - variables created in the local scope
+        //can only be accessed in the local scope
+        function local1(){
+            //local scope
+            //let local_scope1 = 'local';
+            //console.log(global);
+            //console.log(local_scope1);
+        }
+
+        function local2(){
+            //local scope
+            //console.log(local_scope1);
+        }
+        local1();
+        local2();
+    </script>
+</body>
+</html>
